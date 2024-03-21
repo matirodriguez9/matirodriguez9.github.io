@@ -4,43 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body bgColor="#FED8B1">
-    <h1 style="color:dodgerblue; font-family: Arial, Helvetica, sans-serif;">Matías Rodríguez</h1>
-    <h3 style="color:blue; font-family: Arial, Helvetica, sans-serif;">Major:</h3>
-    <h3> Electrical Engineering, with a concentration in web technologies</h3>
-    <h3 style="color: blue; font-family: Arial, Helvetica, sans-serif;">Year of enrollment:</h3>
-    <h4>2021</h4> 
-    <h3 style="color:blue; font-family: Arial, Helvetica, sans-serif;">My github:</h3>
-    <a href="https://github.com/matirodriguez9/matirodriguez9.github.io">Link</a>
-    <h4 style="color: blue; font-family: Arial, Helvetica, sans-serif;">About me:</h4> 
-    <h5>Currently entering my fourth year and eight semester in the university, I am doing my
-        final course in my technological concentration, Web Technologies. Im an electrical engineer student,
-        with my courses up to date with the program. I strive to learn new skills during this course, as
-        learning new programming languages is highly entertaining and fulfilling. I love sports, reading, 
-        studying, and living a balanced lifestyle.</h5>
-        <input id="caja" type="text">
-        <button onclick="popup()"> click</button>
-        <h5 id="variable"></h5>
-    <table style="border: 4px solid black;  color:black;margin-left:auto; margin-right: auto">
-    <caption>My skills</caption>
+
+<nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand text-white">Navbar</a>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+
+<div class="container text-center"> 
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center p-3 mb-2 bg-primary text-white" style="font-size: 200%;">Matías Rodríguez</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h2 class="p-3 mb-2 bg-dark text-white" style="font-size: 200%;">Major:</h2>
+        </div>
+        <div class="col-md-8">
+            <h4 class="p-3 mb-2 bg-light text-dark" style="font-size: 200%;"> Electrical Engineering, with a concentration in web technologies</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2 class="p-3 mb-2 bg-dark text-white" style="font-size: 200%;">Year of enrollment:</h2>
+        </div>
+        <div class="col-md-8">
+            <h4 class="p-3 mb-2 bg-light text-dark" style="font-size: 200%;">2021</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2 class="p-3 mb-2 bg-dark text-white" style="font-size: 200%;">My github:</h2>
+        </div>
+        <div class="col-md-8">
+            <a href="https://github.com/matirodriguez9/matirodriguez9.github.io" class="d-block p-3 mb-2 bg-light text-dark text-center" style="font-size: 200%; display: flex; align-items: center; justify-content: center;">Click here!</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2 class="p-3 mb-2 bg-dark text-white" style="font-size: 200%;">About me:</h2>
+        </div>
+        <div class="col-md-8">
+            <h5 class="p-3 mb-2 bg-light text-dark">Currently entering my fourth year and eight semester in the university, I am doing my final course in my technological concentration, Web Technologies. Im an electrical engineer student, with my courses up to date with the program. I strive to learn new skills during this course, as learning new programming languages is highly entertaining and fulfilling. I love sports, reading, studying, and living a balanced lifestyle.</h5>
+        </div>
+    </div>
+</div>
+
+<div class="container d-flex justify-content-center mt-4">
+<h5 id="variable"></h5>
+</div>
+
+<div class="container d-flex justify-content-center mt-4">
+    <button type="button" class="btn btn-secondary"
+        data-bs-toggle="popover" data-bs-placement="right"
+        data-bs-custom-class="custom-popover"
+        data-bs-title="Custom popover"
+        data-bs-content="Surprise! This is a popover!">
+     Custom popover
+    </button>
+</div>
+
+<div class="container d-flex justify-content-center mt-4">
+<input id="caja" type="text">
+<button onclick="popup()"> click</button>
+</div>
+
+
+<table class="table justify-content-center mt-4">
+    <thead class="thead-dark">
         <tr>
-          <td>Skill</td>
-          <td>Level</td>
+            <th scope="col">Skill</th>
+            <th scope="col">Level</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Python</td>
+            <td>Advanced</td>
         </tr>
         <tr>
-          <td>Python</td>
-          <td>Advanced</td>
+            <td>Javascript</td>
+            <td>Basic</td>
         </tr>
         <tr>
-          <td>Javascript</td>
-          <td>Basic</td>
+            <td>SQL</td>
+            <td>Intermediate</td>
         </tr>
         <tr>
-          <td>SQL</td>
-          <td>Intermediate</td>
-        </tr>
-          <tr>
             <td>MATLAB</td>
             <td>Intermediate</td>
         </tr>
@@ -49,25 +112,35 @@
             <td>Basic</td>
         </tr>
         <tr>
-          <td>English</td>
-          <td>Native</td>
+            <td>English</td>
+            <td>Native</td>
         </tr>
         <tr>
             <td>Spanish</td>
             <td>Native</td>
         </tr>
         <tr>
+           
             <td>French</td>
             <td>Beginner</td>
-        </tr>
-      </table>
+          </tr>
+        </tbody>
+</table>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    });
+</script>
 <script>
 
 function popup () {
-   let a = document.getElementById("caja").value;
-   document.getElementById("variable").innerHTML = a;
-    return ;
+let a = document.getElementById("caja").value;
+document.getElementById("variable").innerHTML = a;
+return ;
 }
 </script>
 </html>
